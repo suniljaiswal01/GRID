@@ -1,0 +1,28 @@
+{
+  "capabilities":
+      [
+		
+		{
+          "browserName": "firefox",
+			"maxInstances": "5",
+			"seleniumProtocol": "WebDriver",
+			"marionette": "true",
+			"webdriver.gecko.driver":"/home/devops/Grid/geckodriver",
+			"firefox_binary":"/bin/firefox"
+        } ,
+	{
+          "browserName": "chrome",
+          "seleniumProtocol": "WebDriver",
+          "maxInstances": "30"
+        }
+      ],
+  
+         "port":5000,
+         "hubPort":4444,
+		 "host": "192.168.3.233",
+         "registerCycle":500000,
+         "register":true,
+         "maxSession":50,
+		 "hubHost": "192.168.3.233"
+        
+}
